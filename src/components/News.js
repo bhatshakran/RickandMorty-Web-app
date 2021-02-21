@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/styles';
 import { Typography } from '@material-ui/core';
@@ -6,7 +6,8 @@ import news1 from '../images/news1.jpg';
 import news2 from '../images/news2.jpg';
 import news3 from '../images/news3.jpg';
 import news4 from '../images/news4.jpg';
-import Button from '@material-ui/core/Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const useStyles = makeStyles({
 	gridnews: {
@@ -77,10 +78,21 @@ const useStyles = makeStyles({
 	},
 });
 const News = () => {
+	useEffect(() => {
+		AOS.init({
+			duration: 700,
+		});
+	}, []);
 	const classes = useStyles();
 	return (
 		<Grid container className={classes.gridnews}>
-			<Grid item className={classes.leftCont} md={6} xs={12}>
+			<Grid
+				item
+				className={classes.leftCont}
+				md={6}
+				xs={12}
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<img src={news1} alt='' className={classes.newsImg} />
 				<Typography variant='h4' className={classes.heading}>
 					Why Rick & Morty Needs To Replace The Heroes With Beth & Summer
@@ -103,7 +115,13 @@ const News = () => {
 				{/* <footer>Courtesy:Screen Rant</footer> */}
 			</Grid>
 
-			<Grid item className={classes.rightCont} md={6} xs={12}>
+			<Grid
+				item
+				className={classes.rightCont}
+				md={6}
+				xs={12}
+				data-aos='fade-left'
+				data-aos-easing='ease-in-out'>
 				<img src={news2} alt='' className={classes.newsImg} />
 				<Typography variant='h4' className={classes.heading}>
 					Why ‘Promortyus’ Is Actually Rick & Morty’s Most Underrated Episode
@@ -118,7 +136,13 @@ const News = () => {
 					often surprisingly smart sci-fi satire.
 				</p>
 			</Grid>
-			<Grid item className={classes.btCont} md={8} xs={12}>
+			<Grid
+				item
+				className={classes.btCont}
+				md={8}
+				xs={12}
+				data-aos='zoom-in'
+				data-aos-easing='ease-in-out'>
 				<img src={news3} alt='' className={classes.btnewsImg} />
 				<Typography
 					variant='h4'
@@ -135,7 +159,13 @@ const News = () => {
 					capacity.
 				</p>
 			</Grid>
-			<Grid item className={classes.btCont} md={4} xs={12}>
+			<Grid
+				item
+				className={classes.btCont}
+				md={4}
+				xs={12}
+				data-aos='zoom-in'
+				data-aos-easing='ease-in-out'>
 				<img src={news4} alt='' className={classes.btnewsImg} />
 				<Typography
 					variant='h4'

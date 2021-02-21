@@ -1,5 +1,6 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import rick from '../images/rick1.jpg';
 import rick2 from '../images/rick2.jpg';
 import rick3 from '../images/rick3.jpg';
@@ -12,9 +13,17 @@ import rick9 from '../images/rick9.jpg';
 import rick10 from '../images/rick10.jpg';
 
 const Gallery = () => {
+	useEffect(() => {
+		AOS.init({
+			duration: 700,
+		});
+	}, []);
 	return (
 		<div className='gallery'>
-			<div className='grid-item g_one'>
+			<div
+				className='grid-item g_one'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick} alt='' />
 					<figcaption>
@@ -23,16 +32,25 @@ const Gallery = () => {
 					</figcaption>
 				</figure>
 			</div>
-			<div className='grid-item g_txt'>
+			<div
+				className='grid-item g_txt'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<p>Wubba lubba</p>
 			</div>
-			<div className='grid-item g_two'>
+			<div
+				className='grid-item g_two'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick2} alt='' />
 					<figcaption>“Welcome to the club, pal.”</figcaption>
 				</figure>
 			</div>
-			<div className='grid-item g_three'>
+			<div
+				className='grid-item g_three'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick3} alt='' />
 					<figcaption>
@@ -40,14 +58,20 @@ const Gallery = () => {
 					</figcaption>
 				</figure>
 			</div>
-			<div className='grid-item g_four'>
+			<div
+				className='grid-item g_four'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick4} alt='' />
 					<figcaption>“Sometimes science is more art than science.”</figcaption>
 				</figure>
 			</div>
 
-			<div className='grid-item g_five'>
+			<div
+				className='grid-item g_five'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick5} alt='' />
 					<figcaption>
@@ -56,7 +80,10 @@ const Gallery = () => {
 					</figcaption>
 				</figure>
 			</div>
-			<div className='grid-item g_six'>
+			<div
+				className='grid-item g_six'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick6} alt='' />
 					<figcaption>
@@ -65,10 +92,16 @@ const Gallery = () => {
 					</figcaption>
 				</figure>
 			</div>
-			<div className='grid-item g_txt_another'>
+			<div
+				className='grid-item g_txt_another'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<p>dub dub</p>
 			</div>
-			<div className='grid-item g_seven'>
+			<div
+				className='grid-item g_seven'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick7} alt='' />
 					<figcaption>
@@ -78,7 +111,10 @@ const Gallery = () => {
 				</figure>
 			</div>
 
-			<div className='grid-item g_eight'>
+			<div
+				className='grid-item g_eight'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick8} alt='' />
 					<figcaption>
@@ -87,7 +123,10 @@ const Gallery = () => {
 					</figcaption>
 				</figure>
 			</div>
-			<div className='grid-item g_nine'>
+			<div
+				className='grid-item g_nine'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick9} alt='' />
 					<figcaption>
@@ -96,7 +135,10 @@ const Gallery = () => {
 					</figcaption>
 				</figure>
 			</div>
-			<div className='grid-item g_ten'>
+			<div
+				className='grid-item g_ten'
+				data-aos='fade-right'
+				data-aos-easing='ease-in-out'>
 				<figure>
 					<img src={rick10} alt='' />
 					<figcaption>

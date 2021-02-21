@@ -18,7 +18,12 @@ const useStyles = makeStyles({
 		top: '60%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
-		['@media (max-width:780px)']: {
+		['@media (max-width:880px)']: {
+			// eslint-disable-line no-useless-computed-key
+			fontSize: '5rem',
+			top: '70%',
+		},
+		['@media (max-width:500px)']: {
 			// eslint-disable-line no-useless-computed-key
 			fontSize: '3rem',
 			top: '60%',
@@ -59,6 +64,7 @@ const Home = () => {
 				</Button>
 			</div>
 			<Gallery />
+
 			<News />
 			<Footer />
 		</>

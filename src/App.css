@@ -40,8 +40,7 @@ a:active {
 	perspective: 1700px;
 	perspective-origin: 0 50%;
 	overflow: hidden;
-	/* box-shadow: 2px 4px 8px rgba(247, 66, 66, 0.274),
-		-12px -4px 16px rgba(247, 66, 66, 0.274); */
+	box-shadow: 2px 8px 16px #dfdbe5, -2px -8px 16px #dfdbe5;
 	border-radius: 8px;
 }
 
