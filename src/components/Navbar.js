@@ -10,6 +10,11 @@ const useStyles = makeStyles({
 		justifyContent: 'space-between',
 		alignItems: 'center',
 		padding: '0.5rem 1rem',
+		['@media (max-width:780px)']: {
+			// eslint-disable-line no-useless-computed-key
+			flexDirection: 'column',
+			justifyContent: 'center',
+		},
 	},
 	navBrand: {
 		fontFamily: 'Maven Pro',
@@ -34,6 +39,11 @@ const useStyles = makeStyles({
 		},
 		'&:active': {
 			color: '#fff',
+		},
+		['@media (max-width:780px)']: {
+			// eslint-disable-line no-useless-computed-key
+			fontSize: '1rem',
+			margin: '0 0.6rem',
 		},
 	},
 });

@@ -15,9 +15,14 @@ const useStyles = makeStyles({
 		fontSize: '13rem',
 		fontFamily: 'Maven Pro',
 		position: 'absolute',
-		top: '70%',
+		top: '60%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
+		['@media (max-width:780px)']: {
+			// eslint-disable-line no-useless-computed-key
+			fontSize: '3rem',
+			top: '60%',
+		},
 	},
 	red: {
 		color: 'black',

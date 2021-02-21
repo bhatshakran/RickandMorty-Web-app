@@ -12,6 +12,13 @@ const useStyles = makeStyles({
 		alignItems: 'center',
 		padding: ' 0 2rem',
 		position: ' relative',
+		['@media (max-width:780px)']: {
+			// eslint-disable-line no-useless-computed-key
+			flexDirection: 'column',
+			height: '350px',
+			padding: '1rem 0',
+			justifyContent: 'center',
+		},
 	},
 	red: {
 		color: 'orangered',
@@ -19,6 +26,10 @@ const useStyles = makeStyles({
 	ftrBrand: {
 		fontSize: '4rem',
 		fontFamily: 'Maven Pro',
+		['@media (max-width:780px)']: {
+			// eslint-disable-line no-useless-computed-key
+			fontSize: '1.5rem',
+		},
 	},
 	ftrGroup: {
 		display: 'flex',
@@ -32,11 +43,18 @@ const useStyles = makeStyles({
 		padding: '1rem',
 		margin: '0 1rem',
 		fontSize: '1.3rem',
+		['@media (max-width:780px)']: {
+			// eslint-disable-line no-useless-computed-key
+			fontSize: '1rem',
+			margin: '0.1rem 0',
+			padding: '0.3rem',
+		},
 	},
 	copy: {
 		position: 'absolute',
 		bottom: '10px',
 		left: '50%',
+		transform: 'translateX(-50%)',
 		fontFamily: 'archivo',
 	},
 });

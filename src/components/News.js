@@ -12,6 +12,10 @@ const useStyles = makeStyles({
 	gridnews: {
 		padding: '8rem',
 		background: 'pink',
+		['@media (max-width:780px)']: {
+			// eslint-disable-line no-useless-computed-key
+			padding: '0',
+		},
 	},
 	leftCont: {
 		background: '#1fcecb',
@@ -26,6 +30,10 @@ const useStyles = makeStyles({
 	heading: {
 		color: '#111111',
 		fontFamily: 'Maven Pro',
+		['@media (max-width:780px)']: {
+			// eslint-disable-line no-useless-computed-key
+			fontSize: '1.5rem',
+		},
 	},
 	rightCont: {
 		background: '#c80815',
@@ -48,6 +56,10 @@ const useStyles = makeStyles({
 		fontSize: '1.1rem',
 		lineHeight: ' 23px',
 		opacity: '0.8',
+		['@media (max-width:780px)']: {
+			// eslint-disable-line no-useless-computed-key
+			fontSize: '1rem',
+		},
 	},
 
 	btCont: {
@@ -68,7 +80,7 @@ const News = () => {
 	const classes = useStyles();
 	return (
 		<Grid container className={classes.gridnews}>
-			<Grid item className={classes.leftCont} md={6}>
+			<Grid item className={classes.leftCont} md={6} xs={12}>
 				<img src={news1} alt='' className={classes.newsImg} />
 				<Typography variant='h4' className={classes.heading}>
 					Why Rick & Morty Needs To Replace The Heroes With Beth & Summer
@@ -91,7 +103,7 @@ const News = () => {
 				{/* <footer>Courtesy:Screen Rant</footer> */}
 			</Grid>
 
-			<Grid item className={classes.rightCont} md={6}>
+			<Grid item className={classes.rightCont} md={6} xs={12}>
 				<img src={news2} alt='' className={classes.newsImg} />
 				<Typography variant='h4' className={classes.heading}>
 					Why ‘Promortyus’ Is Actually Rick & Morty’s Most Underrated Episode
@@ -106,7 +118,7 @@ const News = () => {
 					often surprisingly smart sci-fi satire.
 				</p>
 			</Grid>
-			<Grid item className={classes.btCont} md={8}>
+			<Grid item className={classes.btCont} md={8} xs={12}>
 				<img src={news3} alt='' className={classes.btnewsImg} />
 				<Typography
 					variant='h4'
@@ -123,7 +135,7 @@ const News = () => {
 					capacity.
 				</p>
 			</Grid>
-			<Grid item className={classes.btCont} md={4}>
+			<Grid item className={classes.btCont} md={4} xs={12}>
 				<img src={news4} alt='' className={classes.btnewsImg} />
 				<Typography
 					variant='h4'
