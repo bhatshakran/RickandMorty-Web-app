@@ -82,6 +82,7 @@ figure img {
 	font-family: 'Archivo';
 	font-size: 1rem;
 }
+
 figure:hover figcaption {
 	opacity: 1;
 	transform: rotateY(0deg);
@@ -151,7 +152,7 @@ figure:hover img {
 		grid-column: 2/3;
 	}
 	.g_txt {
-		grid-row: 1/2;
+		grid-row: 1/3;
 	}
 	.g_txt p {
 		font-size: 5rem;
@@ -161,10 +162,11 @@ figure:hover img {
 		grid-column: 1/3;
 	}
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 700px) {
 	.gallery {
 		grid-template-columns: repeat(1, 100%);
 	}
+
 	.g_one,
 	.g_two,
 	.g_three,
@@ -175,6 +177,9 @@ figure:hover img {
 	.g_nine,
 	.g_ten {
 		grid-column: 1/2;
+	}
+	.g_text {
+		grid-row: 1/2;
 	}
 	.g_txt p,
 	.g_txt_another {

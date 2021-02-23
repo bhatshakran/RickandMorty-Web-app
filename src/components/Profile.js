@@ -86,7 +86,7 @@ const useStyles = makeStyles({
 		['@media (max-width:600px)']: {
 			// eslint-disable-line no-useless-computed-key
 
-			borderRadius: '0px 8px 0px 0px',
+			borderRadius: '8px 8px 0px 0px',
 		},
 	},
 	closeBtn: {
