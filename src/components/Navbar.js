@@ -35,7 +35,7 @@ const useStyles = makeStyles({
 		padding: '1rem',
 		margin: '0 1rem',
 		'&:hover': {
-			color: '#fff',
+			color: 'orangered',
 		},
 		'&:active': {
 			color: '#fff',
@@ -56,10 +56,10 @@ const Navbar = () => {
 				<Link to='/'>
 					<li className={classes.navItem}>Home</li>
 				</Link>
-				<Link to=''>
+				<Link to='/search'>
 					<li className={classes.navItem}>Search</li>
 				</Link>
-				<Link to=''>
+				<Link to='/about'>
 					<li className={classes.navItem}>About</li>
 				</Link>
 			</ul>

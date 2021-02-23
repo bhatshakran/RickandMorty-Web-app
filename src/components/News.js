@@ -120,7 +120,7 @@ const News = () => {
 				className={classes.rightCont}
 				md={6}
 				xs={12}
-				data-aos='fade-left'
+				data-aos='fade-right'
 				data-aos-easing='ease-in-out'>
 				<img src={news2} alt='' className={classes.newsImg} />
 				<Typography variant='h4' className={classes.heading}>
