@@ -166,7 +166,12 @@ figure:hover img {
 	.gallery {
 		grid-template-columns: repeat(1, 100%);
 	}
-
+	.grid-item {
+		height: 300px;
+	}
+	.g_txt_another {
+		height: 100%;
+	}
 	.g_one,
 	.g_two,
 	.g_three,
