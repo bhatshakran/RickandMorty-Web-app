@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { ClassSharp } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
 	ftr: {
@@ -66,18 +66,18 @@ const Footer = () => {
 				Rick And <span className={classes.red}>Morty</span>{' '}
 			</div>
 			<ul className={classes.ftrGroup}>
-				<a href=''>
+				<Link to='/'>
 					<li className={classes.ftrItem}>Home</li>
-				</a>
-				<a href=''>
+				</Link>
+				<Link to='/about'>
 					<li className={classes.ftrItem}>About</li>
-				</a>
-				<a href=''>
+				</Link>
+				<Link to='/search'>
 					<li className={classes.ftrItem}>Search</li>
-				</a>
-				<a href=''>
+				</Link>
+				<Link to='#'>
 					<li className={classes.ftrItem}>Terms and Conditions</li>
-				</a>
+				</Link>
 			</ul>
 			<p className={classes.copy}>Copyright 2021</p>
 		</footer>

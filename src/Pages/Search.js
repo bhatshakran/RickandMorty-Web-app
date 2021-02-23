@@ -10,6 +10,7 @@ import { TextField } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import SearchIcon from '@material-ui/icons/Search';
+import Spinner from '../images/spinner.gif';
 
 const useStyles = makeStyles({
 	container: {
@@ -121,6 +122,10 @@ const useStyles = makeStyles({
 	cardsgrid: {
 		background: 'linear-gradient(to right, #005C97, #363795)',
 	},
+	spinner: {
+		position: 'absolute',
+		margin: '0 auto',
+	},
 });
 const Search = () => {
 	const classes = useStyles();
@@ -216,8 +221,10 @@ const Search = () => {
 						);
 					}
 				})}
-				{loading === true ? <div>loading..</div> : null}
-				<div>{error && 'Error...'}</div>
+				{loading === true ? (
+					<img src={Spinner} alt='' className={classes.spinner} />
+				) : null}
+				<div>{error && alert('Error finding the character')}</div>
 			</Grid>
 		</div>
 	);
